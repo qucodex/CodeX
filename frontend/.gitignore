@@ -23,6 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
+package-*.json
 
 # environment
-.env.production
+.env
+.env.*

@@ -1,10 +1,16 @@
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./pages/Homepage";
+import NotFound from "./pages/NotFound";
+
+
 function App() {
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-600 animate-pulse">
-        Codex Club is running...
-      </h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+
+      {/* All 404 route */}
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 
